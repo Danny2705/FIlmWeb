@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <title>Film Website</title>
+    <script>
+      function openDay() {
+        document.getElementById("day").style.display = 'block';
+        document.getElementById("week").style.display = 'none';
+        document.getElementById("month").style.display = 'none';
+      }
+      function openWeek() {
+        document.getElementById("week").style.display = 'block';
+        document.getElementById("day").style.display = 'none';
+        document.getElementById("month").style.display = 'none';
+      }
+      function openMonth() {
+        document.getElementById("month").style.display = 'block';
+        document.getElementById("day").style.display = 'none';
+        document.getElementById("week").style.display = 'none';
+      }
+    </script>
+  </head>
+  <body>
+    
+    <!-- Menu list of a webpage -->
+    <header class="header">
+      <div class="container">
+        <div class="top">
+          <div class="logo">
+            <img src="images/logo.png" alt="Logo" />
+          </div>
+          <div class="right_header">
+            <div class="search">
+              <form method="GET" action="">
+                <input
+                  type="textbox"
+                  class="keyword"
+                  placeholder="V.d: tên phim, tên diễn viên..."
+                />
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </form>
+              <div class="suggest_btn">
+                <p>Công cụ tìm kiếm phim.</p>
+              </div>
+            </div>
+            <div class="user_menu">
+              <ul>
+                <li>
+                  <i class="fa fa-right-to-bracket"></i>
+                  <a href="#">Đăng nhập</a>
+                </li>
+                <li><i class="fa fa-users"></i> <a href="#">Đăng ký</a></li>
+                <li><i class="fa fa-bookmark"></i> <a href="#">Bookmark</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main_menu">
+        <ul>
+          <li class="main_item active"><a href="index.html">Trang chủ</a></li>
+          <li class="main_item"><a href="#">Thể loại</a></li>
+          <li class="main_item"><a href="#">Quốc gia</a></li>
+          <li class="main_item"><a href="#">Phim mới</a></li>
+          <li class="main_item"><a href="#">Phim bộ</a></li>
+          <li class="main_item"><a href="#">Phim lẻ</a></li>
+          <li class="main_item"><a href="#">Phim thuyết minh</a></li>
+          <li class="main_item"><a href="#">Phim chiếu rạp</a></li>
+          <li class="main_item"><a href="#">TV show</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Main content -->
+    <main class="main_content">
+      <section class="first_content">
+        <h2 class="title_box">Phim hot</h2>
+        <div class="five_columns">
+          <ul class="first_row_image">
+            <li class="top_image">
+              <span class="episode">Tập 6 Vietsub</span>
+              <a href="#">
+                <img
+                  src="images/thần tượng vô danh.jpg"
+                  style="height: 270px; width: 182px"
+                  alt="TTVD"
+                />
+              </a>
+              <div class="title">Thần Tượng Vô Danh</div>
+            </li>
+            <li>
+              <span class="episode">Full 36/36 Vietsub</span>
+              <a href="#">
+                <img
+                  src="images/nghe nói em thích tôi.jpg"
+                  style="height: 270px; width: 182px"
+                  alt="NNETT"
+                />
+              </a>
+              <div class="title" style="width: 182px">
+                Nghe Nói Em Thích Tôi
+              </div>
+            </li>
+            <li>
+              <span class="episode">Tập 4 Vietsub</span>
+              <a href="#">
+                <img
+                  src="images/hòn đảo ma quái.jpg"
+                  style="height: 270px; width: 182px"
+                  alt="HĐMQ"
+                />
+              </a>
+              <div class="title" style="width: 182px">Hòn Đảo Ma Quái</div>
+            </li>
+            <li>
+              <span class="episode">Tập 634 Vietsub</span>
+              <a href="#">
+                <img
+                  src="images/running man.jpg"
+                  style="height: 270px; width: 182px"
+                  alt="running man"
+                />
+              </a>
+              <div class="title" style="width: 182px">Running Man</div>
+            </li>
+            <li>
+              <span class="episode">Tập 28 Vietsub</span>
+              <a href="#">
+                <img
+                  src="images/tinh lạc ngưng thành đường.jpg"
+                  style="height: 270px; width: 182px"
+                  alt="TLNTĐ"
+                />
+              </a>
+              <div class="title" style="width: 182px">
+                Tinh Lạc Ngưng Thành Đường
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="second_content">
+        <div class="left_container">
+          <div class="first_row">
+            <h1 class="title_primary">Phim bộ mới cập nhật</h1>
+            <div class="title_secondary">
+              <a href="#">Phim lẻ mới cập nhật</a>
+            </div>
+            <div class="title_secondary">
+              <a href="#">Phim đã hoàn thành</a>
+            </div>
+          </div>
+          <div class="five_columns">
+            <ul class="second_row_image">
+              <li class="top_image">
+                <span class="episode">Tập 7 Vietsub</span>
+                <a href="#">
+                  <img
+                    src="images/the last of us.jpg"
+                    alt="The last of us"
+                    style="height: 227px; width: 160px"
+                  />
+                  <div class="title_2">The Last Of Us</div>
+                </a>
+              </li>
+              <li>
+                <span class="episode">Tập 22 Vietsub</span>
+                <a href="#">
+                  <img
+                    src="images/học viện anh hùng của tôi 6.jpg"
+                    alt="Học viện anh hùng của tôi 6"
+                    style="height: 227px; width: 160px"
+                  />
+                  <div class="title_2">Học Viên Anh Hùng Của Tôi 6 2022</div>
+                </a>
+              </li>
+              <li>
+                <span class="episode">Tập 1 Vietsub</span>
+                <a href="#">
+                  <img
+                    src="images/luật sư ly hôn Shin 2023.jpg"
+                    alt="Luật sư ly hôn Shin"
+                    style="height: 227px; width: 160px"
+                  />
+                  <div class="title_2">Luật Sư Ly Hôn Shin</div>
+                </a>
+              </li>
+              <li>
+                <span class="episode">Tập 15 Vietsub</span>
+                <a href="#">
+                  <img
+                    src="images/khóa học yêu cấp tốc 2023.jpg"
+                    alt="Khóa học yêu cấp tốc"
+                    style="height: 227px; width: 160px"
+                  />
+                  <div class="title_2">Khóa Học Yêu Cấp Tốc</div>
+                </a>
+              </li>
+              <li class="top_image">
+                <span class="episode">Tập 4 Vietsub</span>
+                <a href="#">
+                  <img
+                    src="images/hòn đảo ma quái.jpg"
+                    alt="Hòn đảo ma quái"
+                    style="height: 227px; width: 160px"
+                  />
+                  <div class="title_2">Hòn Đảo Ma Quái</div>
+                </a>
+              </li>
+              <li>
+                <span class="episode">Tập 12 Vietsub</span>
+                <a href="#">
+                  <img
+                    src="images/trái tim tử thần.jpg"
+                    alt="Trái tim tử thần"
+                    style="height: 227px; width: 160px"
+                  />
+                  <div class="title_2">Trái Tim Tử Thần</div>
+                </a>
+              </li>
+              <li>
+                <span class="episode">Tập 6 Vietsub</span>
+                <a href="#">
+                  <img
+                    src="images/thần tượng vô danh.jpg"
+                    alt="Thần tượng vô danh"
+                    style="height: 227px; width: 160px"
+                  />
+                  <div class="title_2">Thần Tượng Vô Danh</div>
+                </a>
+              </li>
+              <li>
+                <span class="episode">Tập 20 Vietsub</span>
+                <a href="#">
+                  <img
+                    src="images/cửu tiên hàn dạ noãn.jpg"
+                    alt="Cửu tiên hàn dạ noãn"
+                    style="height: 227px; width: 160px"
+                  />
+                  <div class="title_2">Cửu Tiên Hàn Dạ Noãn</div>
+                </a>
+              </li>
+              <li class="top_image">
+                <span class="episode">Full 36/36 Vietsub + TM</span>
+                <a href="#">
+                  <img
+                    src="images/nghe nói em thích tôi.jpg"
+                    alt="Nghe nói em thích tôi"
+                    style="height: 227px; width: 160px"
+                  />
+                  <div class="title_2">Nghe Nói Em Thích Tôi 2023</div>
+                </a>
+              </li>
+              <li>
+                <span class="episode">Tập 249 Vietsub</span>
+                <a href="#">
+                  <img
+                    src="images/đấu la đại lục.jpg"
+                    alt="Đấu la đại lục"
+                    style="height: 227px; width: 160px"
+                  />
+                  <div class="title_2">Đấu La Đại Lục 2018</div>
+                </a>
+              </li>
+              <li>
+                <span class="episode">Tập 634 Vietsub</span>
+                <a href="#">
+                  <img
+                    src="images/running man.jpg"
+                    alt="Running man"
+                    style="height: 227px; width: 160px"
+                  />
+                  <div class="title_2">Running man</div>
+                </a>
+              </li>
+              <li>
+                <span class="episode">Tập 67 Vietsub</span>
+                <a href="#">
+                  <img
+                    src="images/băng hỏa ma trù.jpg"
+                    alt="Băng hỏa ma trù"
+                    style="height: 227px; width: 160px"
+                  />
+                  <div class="title_2">Băng Hỏa Ma Trù 2021</div>
+                </a>
+              </li>
+              <li class="top_image">
+                <span class="episode">Tập 20 Vietsub</span>
+                <a href="#">
+                  <img
+                    src="images/Vào Ma Giới Rồi Đấy! Iruma-kun (Phần 3) 2022.jpg"
+                    alt="Vào Ma Giới Rồi Đấy! Iruma-kun (Phần 3) 2022"
+                    style="height: 227px; width: 160px"
+                  />
+                  <div class="title_2">Vào Ma Giới Rồi Đấy! Iruma-kun (Phần 3) 2022</div>
+                </a>
+              </li>
+              <li>
+                <span class="episode">Tập 3 Vietsub</span>
+                <a href="#">
+                  <img
+                    src="images/Xiềng Xích Trái Tim 2023.jpg"
+                    alt="Xiềng Xích Trái Tim 2023"
+                    style="height: 227px; width: 160px"
+                  />
+                  <div class="title_2">Xiềng Xích Trái Tim 2023</div>
+                </a>
+              </li>
+              <li>
+                <span class="episode">Tập 1 Vietsub</span>
+                <a href="#">
+                  <img
+                    src="images/Yêu Không Hối Tiếc 2023.jpg"
+                    alt="Yêu Không Hối Tiếc 2023"
+                    style="height: 227px; width: 160px"
+                  />
+                  <div class="title_2">Yêu Không Hối Tiếc 2023</div>
+                </a>
+              </li>
+              <li>
+                <span class="episode">Tập 14 Vietsub</span>
+                <a href="#">
+                  <img
+                    src="images/Nguyên Long (Phần 3) 2022.jpg"
+                    alt="Nguyên Long (Phần 3) 2022"
+                    style="height: 227px; width: 160px"
+                  />
+                  <div class="title_2">Nguyên Long (Phần 3) 2022</div>
+                </a>
+              </li>
+
+
+            </ul>
+          </div>
+        </div>
+
+        <div class="right_container">
+          <div class="phim_sap_chieu">
+            <h2 class="title_primary">Phim sắp chiếu</h2>
+            <div class="second_primary_container">
+              <div class="five_rows">
+                <div class="first_columns">
+                  <ul>
+                    <li>
+                      <img
+                        src="images/vinh quang trong thù hận 2.jpg"
+                        alt="Vinh quang trong thù hận 2"
+                        width="75px"
+                        height="90px"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src="images/ninh an như mộng.jpg"
+                        alt="Ninh an như mộng"
+                        width="75px"
+                        height="90px"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src="images/ngọc cốt dao.jpg"
+                        alt="Ngọc cốt dao"
+                        width="75px"
+                        height="90px"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src="images/tân thần điêu đại hiệp.jpg"
+                        alt="Tân thần điêu đại hiệp"
+                        width="75px"
+                        height="90px"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src="images/triều ca.jpg"
+                        alt="Triều ca"
+                        width="75px"
+                        height="90px"
+                      />
+                    </li>
+                  </ul>
+                </div>
+                <div class="second_columns">
+                  <div class="text_box">
+                    <p><a href="#">Vinh Quang Trong Thù Hận (Phần 2)</a></p>
+                    <p class="year">2023</p>
+                    <i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="text_box">
+                    <p><a href="#">Ninh An Như Mộng</a></p>
+                    <p class="year">2023</p>
+                    <i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="text_box">
+                    <p><a href="#">Ngọc Cốt Dao</a></p>
+                    <p class="year">2023</p>
+                    <i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="text_box">
+                    <p><a href="#">Tân Thần Điêu Đại Hiệp</a></p>
+                    <p class="year">2023</p>
+                    <i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="text_box">
+                    <p><a href="#">Triều Ca</a></p>
+                    <p class="year">2023</p>
+                    <i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="trending">
+            <h2 class="title_primary">Trending</h2>
+            <div class="date">
+              <div class="day" onclick="openDay()">Ngày</div>
+              <div class="week" onclick="openWeek()">Tuần</div>
+              <div class="month" onclick="openMonth()">Tháng</div>
+            </div>
+            <div id="day" class="list_trending">
+              <ul>
+                <li>
+                  <div class="number">1</div>
+                  <div class="count_view">
+                    <a href="">Tinh lạc ngưng thành đường</a>
+                    <p>12 lượt quan tâm</p>
+                  </div>
+                </li>
+                <li class="even_list">
+                  <div class="number">2</div>
+                  <div class="count_view">
+                    <a href="">Nghe nói em thích tôi</a>
+                    <p>9 lượt quan tâm</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="number">3</div>
+                  <div class="count_view">
+                    <a href="">Cái bóng sư tử của mèo lưới</a>
+                    <p>5 lượt quan tâm</p>
+                  </div>
+                </li>
+                <li class="even_list">
+                  <div class="number">4</div>
+                  <div class="count_view">
+                    <a href="">Khóa Học Yêu Cấp Tốc</a>
+                    <p>4 lượt quan tâm</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="number">5</div>
+                  <div class="count_view">
+                    <a href="">Trùng Tử</a>
+                    <p>3 lượt quan tâm</p>
+                  </div>
+                </li>
+                <li class="even_list">
+                  <div class="number">6</div>
+                  <div class="count_view">
+                    <a href="">Đối Với Tôi Anh Ấy Là Người Nguy Hiểm</a>
+                    <p>3 lượt quan tâm</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="number">7</div>
+                  <div class="count_view">
+                    <a href="">Ẩn Danh (Phần 2)</a>
+                    <p>3 lượt quan tâm</p>
+                  </div>
+                </li>
+                <li class="even_list">
+                  <div class="number">8</div>
+                  <div class="count_view">
+                    <a href="">Hướng Gió Mà Đi</a>
+                    <p>3 lượt quan tâm</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="number">9</div>
+                  <div class="count_view">
+                    <a href="">Hoa Mùa Hạ</a>
+                    <p>3 lượt quan tâm</p>
+                  </div>
+                </li>
+                <li class="even_list">
+                  <div class="number">10</div>
+                  <div class="count_view">
+                    <a href="">Mèo Cưỡi Cá</a>
+                    <p>2 lươt quan tâm</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div id="week" class="list_trending">
+              <ul>
+                <li>
+                  <div class="number">1</div>
+                  <div class="count_view">
+                    <a href="">Vinh Quang Trong Thù Hận (Phần 2)</a>
+                    <p>2,299 lượt quan tâm</p>
+                  </div>
+                </li>
+                <li class="even_list">
+                  <div class="number">2</div>
+                  <div class="count_view">
+                    <a href="">Vinh Quang Trong Thù Hận</a>
+                    <p>1,522 lượt quan tâm</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="number">3</div>
+                  <div class="count_view">
+                    <a href="">Tinh Lạc Ngưng Thành Đường</a>
+                    <p>836 lượt quan tâm</p>
+                  </div>
+                </li>
+                <li class="even_list">
+                  <div class="number">4</div>
+                  <div class="count_view">
+                    <a href="">Nghe Nói Em Thích Tôi</a>
+                    <p>542 lượt quan tâm</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="number">5</div>
+                  <div class="count_view">
+                    <a href="">Đường Về Nhà</a>
+                    <p>386 lượt quan tâm</p>
+                  </div>
+                </li>
+                <li class="even_list">
+                  <div class="number">6</div>
+                  <div class="count_view">
+                    <a href="">Đối Với Tôi Anh Ấy Là Người Nguy Hiểm</a>
+                    <p>3 lượt quan tâm</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="number">7</div>
+                  <div class="count_view">
+                    <a href="">Trùng Tử</a>
+                    <p>281 lượt quan tâm</p>
+                  </div>
+                </li>
+                <li class="even_list">
+                  <div class="number">8</div>
+                  <div class="count_view">
+                    <a href="">Hoa Mùa Hạ</a>
+                    <p>279 lượt quan tâm</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="number">9</div>
+                  <div class="count_view">
+                    <a href="">Chuyện Kể Hoa Lưu Ly</a>
+                    <p>250 lượt quan tâm</p>
+                  </div>
+                </li>
+                <li class="even_list">
+                  <div class="number">10</div>
+                  <div class="count_view">
+                    <a href="">Anh Ấy Vượt Núi Sông Mà Đến</a>
+                    <p>239 lươt quan tâm</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div id="month" class="list_trending">
+              <ul>
+                <li>
+                  <div class="number">1</div>
+                  <div class="count_view">
+                    <a href="">Tinh Lạc Ngưng Thành Đường</a>
+                    <p>4,214 lượt quan tâm</p>
+                  </div>
+                </li>
+                <li class="even_list">
+                  <div class="number">2</div>
+                  <div class="count_view">
+                    <a href="">Vinh Quang Trong Thù Hận (Phần 2)</a>
+                    <p>4,009 lượt quan tâm</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="number">3</div>
+                  <div class="count_view">
+                    <a href="">Vinh Qunag Trong Thù Hận</a>
+                    <p>2,126 lượt quan tâm</p>
+                  </div>
+                </li>
+                <li class="even_list">
+                  <div class="number">4</div>
+                  <div class="count_view">
+                    <a href="">Nghe Nói Em Thích Tôi</a>
+                    <p>2,092 lượt quan tâm</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="number">5</div>
+                  <div class="count_view">
+                    <a href="">Trùng Tử</a>
+                    <p>1,037 lượt quan tâm</p>
+                  </div>
+                </li>
+                <li class="even_list">
+                  <div class="number">6</div>
+                  <div class="count_view">
+                    <a href="">Hoa Mùa Hạ</a>
+                    <p>660 lượt quan tâm</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="number">7</div>
+                  <div class="count_view">
+                    <a href="">Hướng Gió Mà Đi</a>
+                    <p>594 lượt quan tâm</p>
+                  </div>
+                </li>
+                <li class="even_list">
+                  <div class="number">8</div>
+                  <div class="count_view">
+                    <a href="">Thiếu Niên Ca Hành</a>
+                    <p>581 lượt quan tâm</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="number">9</div>
+                  <div class="count_view">
+                    <a href="">Khóa Học Yêu Cấp Tốc</a>
+                    <p>574 lượt quan tâm</p>
+                  </div>
+                </li>
+                <li class="even_list">
+                  <div class="number">10</div>
+                  <div class="count_view">
+                    <a href="">Tinh Hà Xán Lạn</a>
+                    <p>552 lươt quan tâm</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="keyword">
+            <h2 class="title_primary">Từ Khóa Nổi Bật</h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="second_content">
+        <div class="left_container">
+          <div class="first_row">
+            <h1 class="title_primary">Phim hoạt hình</h1>
+          </div>
+          <div class="five_columns">
+            <ul class="second_row_image">
+              <li class="top_image">
+                <span class="episode">Tập 24 Vietsub</span>
+                <a href="#">
+                  <img
+                    src="images/Thần Lan Kỳ Vực Vô Song Châu 2022.jpg"
+                    alt="Thần Lan Kỳ Vực Vô Song Châu 2022"
+                    style="height: 227px; width: 160px"
+                  />
+                  <div class="title_2">Thần Lan Kỳ Vực Vô Song Châu 2022</div>
+                </a>
+              </li>
+              <li>
+                <span class="episode">Tập 22 Vietsub</span>
+                <a href="#">
+                  <img
+                    src="images/học viện anh hùng của tôi 6.jpg"
+                    alt="học viện anh hùng của tôi 6"
+                    style="height: 227px; width: 160px"
+                  />
+                  <div class="title_2">Học viện anh hùng của tôi 6</div>
+                </a>
+              </li>
+              <li>
+                <span class="episode">Tập 14 Vietsub</span>
+                <a href="#">
+                  <img
+                    src="images/Nguyên Long (Phần 3) 2022.jpg"
+                    alt="Nguyên Long (Phần 3) 2022"
+                    style="height: 227px; width: 160px"
+                  />
+                  <div class="title_2">Nguyên Long (Phần 3) 2022</div>
+                </a>
+              </li>
+              <li>
+                <span class="episode">Tập 67 Vietsub</span>
+                <a href="#">
+                  <img
+                    src="images/băng hỏa ma trù.jpg"
+                    alt="băng hỏa ma trù"
+                    style="height: 227px; width: 160px"
+                  />
+                  <div class="title_2">Băng Hỏa Ma Trù 2021</div>
+                </a>
+              </li>
+              <li class="top_image">
+                <span class="episode">Tập 20 Vietsub</span>
+                <a href="#">
+                  <img
+                    src="images/Vào Ma Giới Rồi Đấy! Iruma-kun (Phần 3) 2022.jpg"
+                    alt="Vào Ma Giới Rồi Đấy! Iruma-kun (Phần 3) 2022"
+                    style="height: 227px; width: 160px"
+                  />
+                  <div class="title_2">Vào Ma Giới Rồi Đấy! Iruma-kun (Phần 3) 2022</div>
+                </a>
+              </li>
+              <li>
+                <span class="episode">Tập 32 Vietsub</span>
+                <a href="#">
+                  <img
+                    src="images/Vạn Giới Chí Tôn 2022.jpg"
+                    alt="Vạn Giới Chí Tôn 2022"
+                    style="height: 227px; width: 160px"
+                  />
+                  <div class="title_2">Vạn Giới Chí Tôn 2022</div>
+                </a>
+              </li>
+              <li>
+                <span class="episode">Full 16/16 Vietsub</span>
+                <a href="#">
+                  <img
+                    src="images/Đại Chiến Titan (Phần 5) 2022.jpg"
+                    alt="Đại Chiến Titan (Phần 5) 2022"
+                    style="height: 227px; width: 160px"
+                  />
+                  <div class="title_2">Đại Chiến Titan (Phần 5) 2022</div>
+                </a>
+              </li>
+              <li>
+                <span class="episode">Tập 249 Vietsub</span>
+                <a href="#">
+                  <img
+                    src="images/đấu la đại lục.jpg"
+                    alt="đấu la đại lục"
+                    style="height: 227px; width: 160px"
+                  />
+                  <div class="title_2">Đấu La Đại Lục</div>
+                </a>
+              </li>
+        </div>
+      </section>
+
+      <section class="second_content">
+        <div class="left_container">
+          <div class="first_row">
+            <h1 class="title_primary">Được yêu thích</h1>
+          </div>
+          <div class="five_columns">
+            <ul class="second_row_image">
+              <li class="top_image">
+                <span class="episode">Tập 7 Vietsub</span>
+                <a href="#">
+                  <img
+                    src="images/the last of us.jpg"
+                    alt="The last of us"
+                    style="height: 227px; width: 160px"
+                  />
+                  <div class="title_2">The Last Of Us</div>
+                </a>
+              </li>
+              <li>
+                <span class="episode">Full 24/24 Vietsub</span>
+                <a href="#">
+                  <img
+                    src="images/Đối Với Tôi Anh Ấy Là Người Nguy Hiểm 2023.jpg"
+                    alt="Đối Với Tôi Anh Ấy Là Người Nguy Hiểm 2023"
+                    style="height: 227px; width: 160px"
+                  />
+                  <div class="title_2">Đối Với Tôi Anh Ấy Là Người Nguy Hiểm 2023</div>
+                </a>
+              </li>
+              <li>
+                <span class="episode">Full 36/36 Vietsub + TM</span>
+                <a href="#">
+                  <img
+                    src="images/nghe nói em thích tôi.jpg"
+                    alt="nghe nói em thích tôi"
+                    style="height: 227px; width: 160px"
+                  />
+                  <div class="title_2">Nghe Nói Em Thích Tôi</div>
+                </a>
+              </li>
+              <li>
+                <span class="episode">Tập 15 Vietsub</span>
+                <a href="#">
+                  <img
+                    src="images/khóa học yêu cấp tốc 2023.jpg"
+                    alt="khóa học yêu cấp tốc 2023"
+                    style="height: 227px; width: 160px"
+                  />
+                  <div class="title_2">Khóa học yêu cấp tốc 2023</div>
+                </a>
+              </li>
+              <li class="top_image">
+                <span class="episode">Tập 28 Vietsub</span>
+                <a href="#">
+                  <img
+                    src="images/Trùng Tử 2023.jpg"
+                    alt="Trùng Tử 2023"
+                    style="height: 227px; width: 160px"
+                  />
+                  <div class="title_2">Trùng Tử 2023</div>
+                </a>
+              </li>
+              <li>
+                <span class="episode">Full 24/24 Vietsub</span>
+                <a href="#">
+                  <img
+                    src="images/Hoa Mùa Hạ 2023.jpg"
+                    alt="Hoa Mùa Hạ 2023"
+                    style="height: 227px; width: 160px"
+                  />
+                  <div class="title_2">Hoa Mùa Hạ 2023</div>
+                </a>
+              </li>
+              <li>
+                <span class="episode">Full 40/40 Vietsub</span>
+                <a href="#">
+                  <img
+                    src="images/Đi Đến Nơi Có Gió 2023.jpg"
+                    alt="Đi Đến Nơi Có Gió 2023"
+                    style="height: 227px; width: 160px"
+                  />
+                  <div class="title_2">Đi Đến Nơi Có Gió 2023</div>
+                </a>
+              </li>
+              <li>
+                <span class="episode">Tập 28 Vietsub</span>
+                <a href="#">
+                  <img
+                    src="images/tinh lạc ngưng thành đường.jpg"
+                    alt="tinh lạc ngưng thành đường"
+                    style="height: 227px; width: 160px"
+                  />
+                  <div class="title_2">Tinh Lạc Ngưng Thành Dường</div>
+                </a>
+              </li>
+              
+              
+        </div>
+        
+      </section>
+    </main>
+  
+    <!--Footer-->
+    <footer>
+      <div class="third_content">
+        <div class="left_area">
+          <p>
+            <span>Xem phim hay</span> miễn phí chất lượng cao với phụ đề tiếng
+            việt - thuyết minh - lồng tiếng. Mọt phim có nhiều thể loại phim
+            phong phú, đặc sắc, nhiều bộ phim hay nhất - mới nhất. <br />
+            Website MọtPhimTV với giao diện trực quan, thuận tiện, tốc độ tải
+            nhanh, với độ tin cậy cao hứa hẹn sẽ đem lại những trải nghiệm tốt
+            nhất cho người dùng.
+          </p>
+        </div>
+
+        <div class="right_area">
+          <div class="info">
+            <div class="left_side">
+              <div class="heading">Quy định</div>
+              <a href="#">Điều khoản chung</a>
+              <a href="#">Chính sách riêng tư</a>
+            </div>
+
+            <div class="right_side">
+              <div class="heading">Giới thiệu</div>
+              <a href="#">Trang chủ</a>
+              <a href="#">Facebook</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
